@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color1: #fff;
+    --color2: #ffa434;
+    
+}
+body{
+    background-color: rgb(103, 124, 140);
+
+}
+/* -- Header 1-- */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/bc.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    padding: 2% 6%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+nav .logo{
+    color: var(--color1);
+    font-size: 33px;
+    font-weight: 500;
+}
+nav .logo span{
+    font-style: italic;
+    color: var(--color2);
+}
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink ul li {
+    display: inline-block;
+    margin: 8px 12px;
+    position: relative;
+}
+.navlink ul li a{
+    color: var(--color1);
+    font-size: 15px;
+}
+.navlink ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--color2);
+    display: block;
+    margin: auto;
+    transition: 0.20s;
+}
+.navlink ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.text-box{
+    width: 90%;
+    color: var(--color1);
+    transform: translate(-50%, 50%);
+    top: 15%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+}
+.text-box h1{
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.text-box h1::after{
+    content: '';
+    height: 5px;
+    width: 55%;
+    margin: auto;
+    display: block;
+    background-color: var(--color2);
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 15px;
+}
+.hero-btn{
+    color: var(--color1);
+    border: 2px solid var(--color1);
+    padding: 12px 34px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    background: var(--color2);
+    border: 2px solid var(--color2);
+}
+/* -- Header 2-- */
+.container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+
+.container h1{
+    font-size: 50px;
+    color: #ffa500; /* Warna oranye */
+}
+
+.container p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.classes {
+    color: #fff;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.class-box {
+    flex-basis: 20%;
+    background-color: rgba(122, 147, 166, 1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 0.5%;
+}
+
+.class-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.class-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.class-box li {
+    margin: 5px 0;
+}
+
+/* -- Header 3-- */
+
+.testimonial-section {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.testimonial-section h1 {
+    font-size: 50px;
+    color: #ffa500; /* Warna oranye */
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    background-color: #ffa500; /* Warna oranye */
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.testimonial p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+.footer {
+    background-color: #f59e00; /* Warna latar belakang sesuai gambar */
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .about-us {
+    margin-bottom: 20px;
+}
+
+.footer .about-us h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.footer .about-us p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer .social-media {
+    margin: 20px 0;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+
+.footer .social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer .credits {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
